@@ -1,21 +1,28 @@
-import { useState } from 'react'
+
+
+
+
+import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import './index.css'
+import Home from "./components/Home/Home";
+import Layout from "./Layout";
+import Overview from "./components/Overview/Overview";
+
 
 function App() {
-
   return (
-    <div className='text-blue-400 font-bold'>
-      <h1>Hello</h1>
-
-      <div className="">
-            <langflow-chat
-                chat_input_field="message"
-                flow_id="2316cbad-39e6-478c-bbdb-ffbf541b6624"
-                host_url="http://127.0.0.1:7862"
-            ></langflow-chat>
-        </div>
-
-    </div>
-  )
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home/>} />
+            <Route path="/overview" element={<Overview/>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;
