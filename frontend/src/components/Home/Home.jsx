@@ -81,7 +81,7 @@ const Home = () => {
             engagement, improve performance, and drive growth.
           </p>
           <div className="flex gap-5 mt-8">
-            <Link to="/chat" className="bg-purple1 text-white font-bold my-auto py-4 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 transform">
+            <Link className="bg-purple1 text-white font-bold my-auto py-4 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 transform">
               Demo
             </Link>
             <Link
@@ -255,20 +255,13 @@ const Home = () => {
         </button>
       )}
 
+      {/* Chat Button */}
       <div className="fixed bottom-8 right-8 rounded-full shadow-lg transition-all duration-300 z-50">
-        <langflow-chat
-          // flow_id="208044bb-622b-473a-b251-49496bc9849a"
-          // host_url="https://meekhumor-langflow.huggingface.co/"
-          window_title="Social Media Analyzer"
-          flow_id="208044bb-622b-473a-b251-49496bc9849a"
-          host_url="http://localhost:7860"
-          api_key="AstraCS:nqqDdjdiXOAKHIRCCXcHYXbE:b140ccd8984b02937e6c3211797363d8f9c8ce4f6c8eed1f8138631237fe47e6"
-
- 
-          chat_position="top-left"
-          chat_trigger_style='{"background-color": "#7380f6", "color": "white"}'
-          placeholder="Type your message here..."
-        ></langflow-chat>
+        <Link to="/chat">
+          <button className="bg-purple1 p-4 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300">
+            <img src="message.svg" className="w-8 h-8" alt="Message Icon" />
+          </button>
+        </Link>
       </div>
     </main>
   );
