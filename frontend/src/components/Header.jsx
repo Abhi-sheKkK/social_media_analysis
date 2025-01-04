@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from "react-router-dom"
+import {Link} from "react-router-dom"
 const Header = () => {
   return (
     <header className="bg-purple1 text-white p-4 shadow-md">
