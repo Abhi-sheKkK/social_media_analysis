@@ -5,7 +5,7 @@ import Card from "./Homecard";
 
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isAtTop, setIsAtTop] = useState(true); 
+  const [isAtTop, setIsAtTop] = useState(true);
 
   const images = [
     {
@@ -71,7 +71,7 @@ const Home = () => {
   return (
     <main className="mx-auto  flex flex-col gap-14">
       {/* Introduction */}
-      <section className="flex justify-center items-center max-w-6xl mx-auto gap-8 mt-12">
+      <section className="flex justify-center items-center max-w-6xl mx-auto gap-8 mt-6 py-6">
         <div className="flex flex-col gap-6 items-start text-left max-w-3xl pl-6">
           <h2 className="text-4xl font-extrabold text-purple1">
             Analyze Social Media Trends with AI Insights
@@ -81,10 +81,13 @@ const Home = () => {
             engagement, improve performance, and drive growth.
           </p>
           <div className="flex gap-5 mt-8">
-            <Link className="bg-purple1 text-white font-semibold py-3 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 transform">
+            <Link className="bg-purple1 text-white font-bold my-auto py-4 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 transform">
               Demo
             </Link>
-            <Link className="text-purple1 border-purple1 border-2 font-semibold py-3 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 transform">
+            <Link
+              to="/overview"
+              className="text-purple1  border-purple1 border-2 my-auto font-bold py-3.5 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 transform"
+            >
               Overview
             </Link>
           </div>
@@ -100,7 +103,7 @@ const Home = () => {
       </section>
 
       {/* GPT Insights Carousel */}
-      <section className="max-w-6xl mx-auto">
+      <section className="max-w-6xl mx-auto pb-6">
         <Carousel
           className="rounded-xl h-96"
           activeIndex={activeIndex}
@@ -120,7 +123,7 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="max-w-6xl mx-auto mt-12">
+      <section id="features" className="max-w-6xl mx-auto py-6">
         <h3 className="text-4xl font-bold text-purple1 text-center">
           Features
         </h3>
@@ -137,13 +140,16 @@ const Home = () => {
       </section>
 
       {/* How It Works */}
-      <section id="how-it-works" className="max-w-6xl mx-auto mt-12">
+      <section id="how-it-works" className="max-w-6xl mx-auto py-6">
         <div className="container mx-auto px-6 lg:px-20">
           {/* Title and Description */}
           <div className="text-center mb-12">
-            <h3 className="text-4xl font-extrabold text-purple1">How It Works</h3>
+            <h3 className="text-4xl font-extrabold text-purple1">
+              How It Works
+            </h3>
             <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-              Explore insights and answers from your social media data using AI-driven workflows. Here’s how the process unfolds:
+              Explore insights and answers from your social media data using
+              AI-driven workflows. Here’s how the process unfolds:
             </p>
           </div>
 
@@ -151,38 +157,61 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-14">
             {/* Step 1 */}
             <div className="flex flex-col items-center text-center">
-              <img src="question.svg" alt=""  className="w-24 p-2 hover:scale-105 rounded-full shadow-lg mb-6" />
-              <h4 className="text-xl font-bold text-gray-700">Step 1: Ask a Question</h4>
+              <img
+                src="question.svg"
+                alt=""
+                className="w-24 p-2 hover:scale-105 rounded-full shadow-lg mb-6"
+              />
+              <h4 className="text-xl font-bold text-gray-700">
+                Step 1: Ask a Question
+              </h4>
               <p className="mt-2 text-gray-600">
-                Submit your query about social media engagement or trends directly on the platform.
+                Submit your query about social media engagement or trends
+                directly on the platform.
               </p>
             </div>
 
             {/* Step 2 */}
             <div className="flex flex-col items-center text-center">
-              <img src="analysis.svg" alt="" className="w-24 p-2 hover:scale-105 rounded-full shadow-lg mb-6" />
-              <h4 className="text-xl font-bold text-gray-700">Step 2: AI Analysis</h4>
+              <img
+                src="analysis.svg"
+                alt=""
+                className="w-24 p-2 hover:scale-105 rounded-full shadow-lg mb-6"
+              />
+              <h4 className="text-xl font-bold text-gray-700">
+                Step 2: AI Analysis
+              </h4>
               <p className="mt-2 text-gray-600">
-                Langflow processes your question through advanced workflows to derive relevant insights.
+                Langflow processes your question through advanced workflows to
+                derive relevant insights.
               </p>
             </div>
 
             {/* Step 3 */}
             <div className="flex flex-col items-center text-center">
-              <img src="insight.svg" alt="" className="w-24 p-3 hover:scale-105 rounded-full shadow-lg mb-6" />
-              <h4 className="text-xl font-bold text-gray-700">Step 3: Get Insights</h4>
+              <img
+                src="insight.svg"
+                alt=""
+                className="w-24 p-3 hover:scale-105 rounded-full shadow-lg mb-6"
+              />
+              <h4 className="text-xl font-bold text-gray-700">
+                Step 3: Get Insights
+              </h4>
               <p className="mt-2 text-gray-600">
-                Receive clear, actionable insights tailored to your question, enabling data-driven decisions.
+                Receive clear, actionable insights tailored to your question,
+                enabling data-driven decisions.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      
-    {/* About  */}
-    <section id="about" className="py-16 bg-gradient-to-r from-purple-500 to-indigo-600 text-white mt-12">
-      <div className="flex justify-center gap-24 py-12">
+      {/* About  */}
+      <section
+        id="about"
+        className="py-16 bg-gradient-to-r from-purple-500 to-indigo-600 text-white mt-12"
+      >
+        <div className="flex justify-center gap-24 py-12">
           <img
             src="happy.webp"
             alt="Social Media Analytics"
@@ -194,28 +223,37 @@ const Home = () => {
               About the Project
             </h3>
             <p className="text-xl text-gray-200 leading-relaxed ">
-              This project was developed as part of the 
-              <span className="font-bold text-yellow-300 pointer"> Level Supermind Hackathon</span>. The goal was to create a dynamic analytics module for evaluating social media performance with tools like 
-              <span className="font-bold text-yellow-300 cursor-pointer"> <a href="https://www.langflow.org/"> Langflow </a></span> and 
-              <span className="font-bold text-yellow-300"> <a href="https://www.datastax.com/"> DataStax Astra DB </a></span>.
+              This project was developed as part of the
+              <span className="font-bold text-yellow-300 pointer">
+                {" "}
+                Level Supermind Hackathon
+              </span>
+              . The goal was to create a dynamic analytics module for evaluating
+              social media performance with tools like
+              <span className="font-bold text-yellow-300 cursor-pointer">
+                {" "}
+                <a href="https://www.langflow.org/"> Langflow </a>
+              </span>{" "}
+              and
+              <span className="font-bold text-yellow-300">
+                {" "}
+                <a href="https://www.datastax.com/"> DataStax Astra DB </a>
+              </span>
+              .
             </p>
           </div>
+        </div>
+      </section>
 
-      </div>
-    </section>
-
-    {/* Back to Top Button */}
-    {!isAtTop && (
-      <button
-        className="fixed bottom-8 right-8 bg-purple1 p-1 rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300"
-        onClick={scrollToTop}
-      >
-        <img src="top.svg" className="w-12" alt="" />
-      </button>
-    )}
-
-
-
+      {/* Back to Top Button */}
+      {!isAtTop && (
+        <button
+          className="fixed bottom-8 right-8 bg-purple1 p-1 rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300"
+          onClick={scrollToTop}
+        >
+          <img src="top.svg" className="w-12" alt="" />
+        </button>
+      )}
     </main>
   );
 };

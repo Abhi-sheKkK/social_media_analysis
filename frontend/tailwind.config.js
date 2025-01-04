@@ -10,6 +10,8 @@ export default withMT({
     extend: {
       colors: {
         purple1: '#7380f6',
+        purplesemi: "#c5ccfa",
+        purplelight: "#e9ecfe"
       },
     },
   },
