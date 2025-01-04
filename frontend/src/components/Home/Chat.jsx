@@ -4,19 +4,25 @@ import axios from 'axios';
 const ChatComponent = () => {
   const [inputValue, setInputValue] = useState('');
   const [responseText, setResponseText] = useState('');
-  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Show loading indicator while waiting for response
-    setLoading(true);
-    setResponseText('');
-
     try {
-      const response = await axios.post('http://localhost:5000/api/chat', {
-        input_value: inputValue,
-      });
+      const response = await axios.post(
+        'https://your-backend-name.onrender.com/api/chat', // Replace with your actual backend URL
+        {
+          input_value: inputValue,
+          output_type: 'chat',
+          input_type: 'chat',
+        },
+        {
+          headers: {
+            'Authorization': 'Bearer Your-Authorization-Token',
+            'Content-Type': 'application/json',
+          },
+        }
+      );
 
       // Extract the message text from the response
       const messageText =
@@ -27,9 +33,6 @@ const ChatComponent = () => {
     } catch (error) {
       console.error('Error making the API request:', error);
       setResponseText('An error occurred while fetching data.');
-    } finally {
-      // Hide loading indicator once request is completed
-      setLoading(false);
     }
   };
 
@@ -47,9 +50,8 @@ const ChatComponent = () => {
         <button
           type="submit"
           className="mt-4 p-2 bg-blue-500 text-white rounded-md w-full"
-          disabled={loading}
         >
-          {loading ? 'Loading...' : 'Send'}
+          Send
         </button>
       </form>
 
