@@ -41,7 +41,7 @@ const Footer = () => {
         </p>
 
         {/* Decorative Line */}
-        <div className="h-1 w-1/2 mx-auto bg-purple-500 rounded-full"></div>
+        <div className="h-1 w-1/2 mx-auto bg-purple1 rounded-full"></div>
       </div>
     </footer>
   );
