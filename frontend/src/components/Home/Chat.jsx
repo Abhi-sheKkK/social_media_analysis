@@ -10,7 +10,7 @@ const ChatComponent = () => {
 
     try {
       const response = await axios.post(
-        'https://your-backend-name.onrender.com/api/chat', // Replace with your actual backend URL
+        'https://social-media-analysis-backend.onrender.com/api/chat', // Replace with your actual backend URL
         {
           input_value: inputValue,
           output_type: 'chat',

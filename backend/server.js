@@ -5,9 +5,7 @@ const cors = require('cors');
 const app = express();
 const port = 5000;
 
-app.use(cors({
-    origin: 'http://localhost:5173',  // Replace with your frontend URL
-  }));
+app.use(cors());
   
 app.use(express.json());
 
