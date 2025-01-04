@@ -257,8 +257,14 @@ const Home = () => {
 
       <div className="fixed bottom-8 right-8 rounded-full shadow-lg transition-all duration-300 z-50">
         <langflow-chat
-          flow_id="2316cbad-39e6-478c-bbdb-ffbf541b6624"
-          host_url="http://127.0.0.1:7860"
+          // flow_id="208044bb-622b-473a-b251-49496bc9849a"
+          // host_url="https://meekhumor-langflow.huggingface.co/"
+          window_title="Social Media Analyzer"
+          flow_id="208044bb-622b-473a-b251-49496bc9849a"
+          host_url="http://localhost:7860"
+          api_key="AstraCS:nqqDdjdiXOAKHIRCCXcHYXbE:b140ccd8984b02937e6c3211797363d8f9c8ce4f6c8eed1f8138631237fe47e6"
+
+ 
           chat_position="top-left"
           chat_trigger_style='{"background-color": "#7380f6", "color": "white"}'
           placeholder="Type your message here..."
