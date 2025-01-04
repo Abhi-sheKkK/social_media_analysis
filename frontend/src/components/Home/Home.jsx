@@ -248,14 +248,22 @@ const Home = () => {
       {/* Back to Top Button */}
       {!isAtTop && (
         <button
-          className="fixed bottom-8 right-8 bg-purple1 p-1 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300"
+          className="fixed bottom-24 right-8 bg-purple1 p-1 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300"
           onClick={scrollToTop}
         >
-          <img src="top.svg" className="w-12" alt="" />
+          <img src="top.svg" className="w-10" alt="" />
         </button>
       )}
 
-
+      <div className="fixed bottom-8 right-8 rounded-full shadow-lg transition-all duration-300 z-50">
+        <langflow-chat
+          flow_id="2316cbad-39e6-478c-bbdb-ffbf541b6624"
+          host_url="http://127.0.0.1:7860"
+          chat_position="top-left"
+          chat_trigger_style='{"background-color": "#7380f6", "color": "white"}'
+          placeholder="Type your message here..."
+        ></langflow-chat>
+      </div>
     </main>
   );
 };
