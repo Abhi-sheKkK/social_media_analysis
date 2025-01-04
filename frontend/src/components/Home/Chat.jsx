@@ -37,7 +37,7 @@ const ChatComponent = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 min-h-screen">
       <h1 className="text-2xl font-bold">Chat with AI</h1>
       <form onSubmit={handleSubmit} className="mt-4">
         <input

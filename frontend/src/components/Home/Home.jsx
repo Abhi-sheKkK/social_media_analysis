@@ -81,7 +81,7 @@ const Home = () => {
             engagement, improve performance, and drive growth.
           </p>
           <div className="flex gap-5 mt-8">
-            <Link className="bg-purple1 text-white font-bold my-auto py-4 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 transform">
+            <Link to="/chat" className="bg-purple1 text-white font-bold my-auto py-4 px-8 rounded-full shadow-xl hover:scale-105 transition-all duration-300 transform">
               Demo
             </Link>
             <Link
