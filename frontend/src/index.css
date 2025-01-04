@@ -9,3 +9,7 @@
 body {
   /* @apply bg-black; */
 }
+
+langflow-chat {
+  --background-color: #4c51bf; /* Indigo background */
+}

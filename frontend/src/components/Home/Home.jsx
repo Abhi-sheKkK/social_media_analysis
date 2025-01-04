@@ -9,15 +9,15 @@ const Home = () => {
 
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
+      src: "carousel1.jpg",
       text: "Carousel posts have 20% higher engagement than static posts.",
     },
     {
-      src: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+      src: "carousel2.jpg",
       text: "Reels drive 2x more comments compared to other formats.",
     },
     {
-      src: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+      src: "carousel3.jpg",
       text: "Static images are best for audience reach during weekdays.",
     },
   ];
@@ -209,7 +209,7 @@ const Home = () => {
       {/* About  */}
       <section
         id="about"
-        className="py-16 bg-gradient-to-r from-purple-500 to-indigo-600 text-white mt-12"
+        className="py-16 bg-gradient-to-r from-purple1 to-indigo-600 text-white mt-12"
       >
         <div className="flex justify-center gap-24 py-12">
           <img
@@ -248,12 +248,14 @@ const Home = () => {
       {/* Back to Top Button */}
       {!isAtTop && (
         <button
-          className="fixed bottom-8 right-8 bg-purple1 p-1 rounded-full shadow-lg hover:bg-purple-700 transition-all duration-300"
+          className="fixed bottom-8 right-8 bg-purple1 p-1 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300"
           onClick={scrollToTop}
         >
           <img src="top.svg" className="w-12" alt="" />
         </button>
       )}
+
+
     </main>
   );
 };
