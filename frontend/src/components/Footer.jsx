@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex justify-center space-x-6 mb-6">
           <a
-            href="https://github.com/"
+            href="https://github.com/meekhumor/social_media_analysis"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition"
