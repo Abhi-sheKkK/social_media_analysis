@@ -222,7 +222,7 @@ const Home = () => {
             <h3 className="text-4xl font-extrabold text-white mb-8">
               About the Project
             </h3>
-            <p className="text-xl text-gray-200 leading-relaxed ">
+            <p className="text-lg text-gray-200 max-w-lg ">
               This project was developed as part of the
               <span className="font-bold text-yellow-300 pointer">
                 {" "}
@@ -248,10 +248,10 @@ const Home = () => {
       {/* Back to Top Button */}
       {!isAtTop && (
         <button
-          className="fixed bottom-24 right-8 bg-purple1 p-1 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300"
+          className="fixed bottom-28 right-8 bg-purple1 p-1 rounded-full shadow-lg hover:bg-indigo-700 transition-all duration-300"
           onClick={scrollToTop}
         >
-          <img src="top.svg" className="w-10" alt="" />
+          <img src="top.svg" className="w-14 m-auto" alt="" />
         </button>
       )}
 
