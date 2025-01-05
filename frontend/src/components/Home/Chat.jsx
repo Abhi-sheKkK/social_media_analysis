@@ -64,7 +64,7 @@ const ChatComponent = () => {
                 className={`px-6 py-3 rounded-lg max-w-lg text-lg shadow-md ${
                   message.sender === 'user'
                     ? 'bg-purple1 text-white'
-                    : 'bg-purple1 text-white'
+                    : 'bg-gray-300 text-gray-800'
                 }`}
               >
                 {message.sender === 'ai' ? (
@@ -78,7 +78,7 @@ const ChatComponent = () => {
 
           {isLoading && (
             <div className="flex justify-start mb-4">
-              <div className="px-6 py-3 rounded-lg bg-indigo-100 text-indigo-900 text-lg shadow-md">
+              <div className="px-6 py-3 rounded-lg bg-gray-300 text-gray-800 text-lg shadow-md">
                 Typing...
               </div>
             </div>
