@@ -123,7 +123,7 @@ Directory structure:
 🎥 Demo Video
 -------------
 
-A detailed demonstration of the project is available on YouTube: 
+A detailed demonstration of the project is available on YouTube: [https://www.youtube.com/watch?v=ULQf2hLj-E8&feature=youtu.be](https://www.youtube.com/watch?v=ULQf2hLj-E8&feature=youtu.be)
 
 * * * * *
 
